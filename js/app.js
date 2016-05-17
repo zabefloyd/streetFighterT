@@ -44,7 +44,7 @@ function playHadouken () {
 }
 
 	 $(document).on('keydown', function(){
-	 		if (event.which == 88) {
+	 		if (event.which == 90) {
 	 			$('.ryu-cool').show();
 	 			$('.ryu-still').hide();
 	 			$('.ryu-ready').hide();
@@ -58,7 +58,7 @@ function playHadouken () {
 	 //key up, cool music stops and ryu returns to still state
 
 	  $(document).on('keyup', function(){
-	 		if (event.which === 88) {
+	 		if (event.which === 90) {
 	 			$('.ryu-cool').hide();
 	 			$('.ryu-ready').hide();
 	 			$('.ryu-throwing').hide();
@@ -108,23 +108,14 @@ $('.ryu-ready1').hide();
 
 });
 
-// //the audio
-// function playHadouken () {
-//   $('#hadouken-sound')[0].volume = 0.1;
-//   $('#hadouken-sound')[0].load();
-//   $('#hadouken-sound')[0].play();
-// }
-
-	
-
 
 	  	 $(document).on('keydown', function(){
-	 		if (event.which == 90) {
+	 		if (event.which == 88) {
 	 			$('.ryu-cool1').show();
 	 			$('.ryu-still1').hide();
 	 			$('.ryu-ready1').hide();
 	 			$('.ryu-throwing1').hide();
-	 			$('#hadouken-sound')[1].play();
+	 			$('#hadouken-sound')[0].pause();
 	 			$('#cool-song')[0].play();
 	 			
 	 		}
@@ -133,7 +124,7 @@ $('.ryu-ready1').hide();
 	 //key up, cool music stops and ryu returns to still state
 
 	  $(document).on('keyup', function(){
-	 		if (event.which === 90) {
+	 		if (event.which === 88) {
 	 			$('.ryu-cool1').hide();
 	 			$('.ryu-ready1').hide();
 	 			$('.ryu-throwing1').hide();
